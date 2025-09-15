@@ -1,0 +1,26 @@
+<section class="panel">
+  <div class="status" [class.win]="winner() === 'X' || winner() === 'O'" [class.draw]="winner() === 'draw'">
+    <span class="label">Status</span>
+    <span class="value">{{ statusText() }}</span>
+  </div>
+
+  <div class="totals">
+    <div class="card x">
+      <span class="label">Player X</span>
+      <span class="score">{{ score().X }}</span>
+    </div>
+    <div class="card o">
+      <span class="label">Player O</span>
+      <span class="score">{{ score().O }}</span>
+    </div>
+    <div class="card d">
+      <span class="label">Draws</span>
+      <span class="score">{{ score().draws }}</span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn secondary" (click)="resetRound()">Next Round</button>
+    <button class="btn danger" (click)="resetMatch()">Reset Match</button>
+  </div>
+</section>

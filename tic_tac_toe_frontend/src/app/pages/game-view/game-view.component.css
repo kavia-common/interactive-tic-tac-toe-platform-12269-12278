@@ -1,0 +1,37 @@
+.game-wrapper {
+  width: 100%;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+.hint {
+  margin-bottom: 12px;
+  background: #ffffff;
+  border: 1px solid #e2edf8;
+  border-radius: 14px;
+  padding: 14px 16px;
+  color: #0b3b6f;
+  box-shadow: 0 4px 22px rgba(18, 38, 58, 0.04);
+}
+
+.hint h2 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.left {
+  display: grid;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .game-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .right {
+    order: -1;
+  }
+}

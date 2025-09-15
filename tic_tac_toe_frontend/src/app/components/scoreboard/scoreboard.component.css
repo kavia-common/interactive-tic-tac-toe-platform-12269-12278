@@ -1,0 +1,97 @@
+.panel {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #e2edf8;
+  border-radius: 14px;
+  box-shadow: 0 4px 22px rgba(18, 38, 58, 0.06);
+  min-width: 260px;
+}
+
+.status {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f5faff;
+  border: 1px dashed #b3d5fb;
+}
+
+.status.win {
+  background: #e8f5e9;
+  border-color: #a5d6a7;
+}
+
+.status.draw {
+  background: #fff8e1;
+  border-color: #ffe082;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #5c6f82;
+  letter-spacing: 0.2px;
+}
+
+.value {
+  font-weight: 600;
+  color: #0b3b6f;
+}
+
+.totals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.card {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e2edf8;
+  text-align: center;
+  background: #f9fbfd;
+}
+
+.card.x { border-color: #ffcdd2; background: #fff1f1; }
+.card.o { border-color: #bbdefb; background: #f1f7ff; }
+.card.d { border-color: #ffe0b2; background: #fff5e6; }
+
+.score {
+  display: block;
+  margin-top: 2px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #12263A;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 120ms ease, transform 80ms ease, border-color 120ms ease;
+}
+
+.btn.secondary {
+  background: #e3f2fd;
+  color: #0b3b6f;
+  border-color: #bbdefb;
+}
+
+.btn.secondary:hover { background: #d6ecff; }
+
+.btn.danger {
+  background: #ffebee;
+  color: #b71c1c;
+  border-color: #ffcdd2;
+}
+
+.btn.danger:hover { background: #ffe3e6; }

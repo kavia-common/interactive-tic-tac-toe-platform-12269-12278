@@ -1,3 +1,14 @@
-<div class="container">
-  <h1>{{ title }}</h1>
-</div>
+<header class="app-header">
+  <div class="brand">
+    <span class="logo">🎮</span>
+    <h1 class="title">{{ title }}</h1>
+  </div>
+</header>
+
+<main class="app-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="app-footer">
+  <p>Enjoy your game! Reset between rounds to keep score.</p>
+</footer>
